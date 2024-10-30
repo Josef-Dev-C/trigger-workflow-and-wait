@@ -193,6 +193,8 @@ wait_for_workflow_to_finish() {
 
     echo "Checking conclusion [${conclusion}]"
     echo "Checking status [${status}]"
+    echo "workflow_id: ${last_workflow_id}"
+    echo "workflow_url: ${last_workflow_url}"
     echo "conclusion=${conclusion}" >> $GITHUB_OUTPUT
     echo "workflow_id=${last_workflow_id}" >> $GITHUB_OUTPUT
     echo "workflow_url=${last_workflow_url}" >> $GITHUB_OUTPUT
